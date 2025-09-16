@@ -51,3 +51,26 @@ alias k=kubectl
 alias kx="kubectl exec -it"
 alias kgp="kubectl get pods"
 ```
+
+# Config
+
+in ~/.config/ghostty/config
+```ini
+# theme = Sea Shells
+theme = Catppuccin Mocha
+keybind = performable:ctrl+v=paste_from_clipboard
+keybind = performable:ctrl+c=copy_to_clipboard
+keybind = performable:ctrl+w=close_window
+keybind = ctrl+alt+c=text:\x1bc
+
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-size = 15
+
+window-height = 25
+window-width = 278
+
+window-padding-y = 20
+window-padding-x = 20
+window-position-x = 5
+window-position-y = 830
+````
