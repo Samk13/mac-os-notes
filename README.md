@@ -24,8 +24,10 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # https://github.com/junegunn/fzf
 source <(fzf --zsh)
-export FZF_ALT_C_OPTS="--walker-skip Library,node_modules,target,.git,.pyenv,.nvm,.Trash,.local,.oh-my-zsh,*/.*,Applications"
+# export FZF_ALT_C_OPTS="--walker-skip Library,node_modules,target,.git,.pyenv,.nvm,.Trash,.local,.oh-my-zsh,*/.*,Applications"
 # Bind fzf-cd-widget to Command+C (assuming terminal sends \e[c for Command+C)
+export FZF_ALT_C_COMMAND='fd --type d . ~/Documents' # Add extra folders that you want to be visible here
+export FZF_ALT_C_OPTS='--preview "ls -la {}"'
 bindkey 'ç' fzf-cd-widget
 
 # uv 
