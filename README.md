@@ -61,7 +61,9 @@ in ~/.config/ghostty/config
 # theme = Sea Shells
 theme = Catppuccin Mocha
 # needed for vim keybindings
-macos-option-as-alt = true 
+macos-option-as-alt = true
+# keep vim works on right alt only to not affect | ~ ...
+macos-option-as-alt = right
 
 keybind = performable:ctrl+v=paste_from_clipboard
 keybind = performable:ctrl+c=copy_to_clipboard
