@@ -60,11 +60,14 @@ in ~/.config/ghostty/config
 ```ini
 # theme = Sea Shells
 theme = Catppuccin Mocha
+# needed for vim keybindings
+macos-option-as-alt = true 
+
 keybind = performable:ctrl+v=paste_from_clipboard
 keybind = performable:ctrl+c=copy_to_clipboard
 keybind = performable:ctrl+w=close_window
 keybind = ctrl+alt+c=text:\x1bc
-
+working-directory = "~"
 font-family = "JetBrainsMonoNL Nerd Font Mono"
 font-size = 15
 
