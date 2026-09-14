@@ -81,3 +81,47 @@ window-padding-x = 20
 window-position-x = 5
 window-position-y = 830
 ````
+
+## Lazygit config
+
+```yaml
+gui:
+  theme:
+    activeBorderColor:
+      - '#fab387'
+      - bold
+    inactiveBorderColor:
+      - '#a6adc8'
+    searchingActiveBorderColor:
+      - '#f9e2af'
+    optionsTextColor:
+      - '#89b4fa'
+    selectedLineBgColor:
+      - '#313244'
+    inactiveViewSelectedLineBgColor:
+      - '#6c7086'
+    cherryPickedCommitFgColor:
+      - '#fab387'
+    cherryPickedCommitBgColor:
+      - '#45475a'
+    markedBaseCommitFgColor:
+      - '#89b4fa'
+    markedBaseCommitBgColor:
+      - '#f9e2af'
+    unstagedChangesColor:
+      - '#f38ba8'
+    defaultFgColor:
+      - '#cdd6f4'
+
+  authorColors:
+    '*': '#b4befe'
+
+os:
+  editPreset: "vscode"
+
+customCommands:
+  - key: "e"
+    context: "localBranches"
+    description: "Open repo in VS Code"
+    command: "code ."
+```
